@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyek • Muhammad Fajri</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<!-- ==== Header & Navigation Bar Section ==== -->
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">MF</a>
+      <nav class="nav" aria-label="Navigasi utama" id="nav">
+        <a href="index.html">Beranda</a>
+        <a href="about.html">Tentang</a>
+        <a href="projects.html" class="active">Proyek</a>
+      </nav>
+      <div class="theme-actions">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button id="themeToggle" class="btn icon-btn" aria-label="Toggle tema">🌓</button>
+      </div>
+    </div>
+  </header>
+
+<!-- ==== Main Content Section ==== -->
+  <main class="container">
+    <div class="page-header">
+      <h1>Proyek Pilihan</h1>
+      <p class="page-subtitle">Beberapa karya & latihan yang pernah gua kerjain. Klik kartu buat detail.</p>
+    </div>
+
+    <div class="projects-filter">
+      <button class="filter-btn active" data-filter="all">Semua</button>
+      <button class="filter-btn" data-filter="game">Game</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="oop">OOP</button>
+    </div>
+
+    <div class="grid three project-grid">
+      <article class="card project" tabindex="0" data-category="game" data-title="Greedy Fish" data-desc="Game 2D santai dengan vibes nostalgia dengan masa-masa warnet. Pemain mengontrol ikan yang harus memakan ikan lebih kecil sambil menghindari ikan yang lebih besar. Dibuat dengan Greenfoot menggunakan konsep OOP dan collision detection." data-tech="Java, Greenfoot">
+        <div class="project-image">
+          <i class="fas fa-fish" style="font-size: 3em; color: var(--accent); opacity: 0.7;"></i>
+        </div>
+        <h3>🐟 Greedy Fish</h3>
+        <p>Game nostalgia dengan mekanisme simple dan sederhana</p>
+        <span class="tag">Greenfoot</span>
+        <div class="project-meta">
+          <span class="meta-item"><i class="fas fa-calendar"></i> Des 2024</span>
+          <span class="meta-item"><i class="fas fa-code"></i> Java</span>
+        </div>
+      </article>
+
+      <article class="card project" tabindex="0" data-category="game" data-title="Flappy Bird (remake)" data-desc="Remake dari game viral tahun 2014 yang sempat membuat heboh dunia mobile gaming. Game simple tapi bikin ketagihan dengan kontrol yang responsif dan tantangan yang bikin pengen terus coba lagi. Dibuat dengan Scratch untuk mempelajari game logic dasar." data-tech="Scratch">
+        <div class="project-image">
+          <i class="fas fa-dove" style="font-size: 3em; color: var(--accent); opacity: 0.7;"></i>
+        </div>
+        <h3>🐦 Flappy Bird (remake)</h3>
+        <p>Game simple namun membuat kecanduan dan menguji kesabaran</p>
+        <span class="tag">Scratch</span>
+        <div class="project-meta">
+          <span class="meta-item"><i class="fas fa-calendar"></i> Nov 2024</span>
+          <span class="meta-item"><i class="fas fa-gamepad"></i> Game</span>
+        </div>
+      </article>
+
+      <article class="card project" tabindex="0" data-category="oop" data-title="OOP PHP - Komputer/Tablet" data-desc="Latihan implementasi konsep Object-Oriented Programming dengan membuat class hierarchy untuk perangkat elektronik. Menerapkan inheritance, polymorphism, dan encapsulation dalam skenario real-world. Project ini membantu memahami konsep dasar OOP secara mendalam." data-tech="PHP">
+        <div class="project-image">
+          <i class="fas fa-laptop" style="font-size: 3em; color: var(--accent); opacity: 0.7;"></i>
+        </div>
+        <h3>💻 OOP PHP</h3>
+        <p>Class, objek, polymorphism untuk perangkat elektronik.</p>
+        <span class="tag">PHP</span>
+        <div class="project-meta">
+          <span class="meta-item"><i class="fas fa-calendar"></i> Okt 2024</span>
+          <span class="meta-item"><i class="fas fa-code"></i> OOP</span>
+        </div>
+      </article>
+
+      <article class="card project" tabindex="0" data-category="web" data-title="Website Portfolio" data-desc="Website portfolio personal yang kamu lihat sekarang! Dibuat dari scratch menggunakan HTML, CSS, dan JavaScript vanilla. Menerapkan responsive design, dark/light mode, smooth animations, dan best practices untuk web development modern." data-tech="HTML, CSS, JavaScript">
+        <div class="project-image">
+          <i class="fas fa-globe" style="font-size: 3em; color: var(--accent); opacity: 0.7;"></i>
+        </div>
+        <h3>🌐 Website Portfolio</h3>
+        <p>Website personal dengan responsive design dan dark mode</p>
+        <span class="tag">Web Dev</span>
+        <div class="project-meta">
+          <span class="meta-item"><i class="fas fa-calendar"></i> Jan 2025</span>
+          <span class="meta-item"><i class="fas fa-code"></i> Web</span>
+        </div>
+      </article>
+
+      <article class="card project" tabindex="0" data-category="oop" data-title="Calculator Kerucut (Dart)" data-desc="Mini aplikasi console untuk menghitung volume dan luas permukaan kerucut. Dibuat saat belajar Dart sebagai persiapan Flutter development. Menggunakan konsep OOP dan input validation." data-tech="Dart">
+        <div class="project-image">
+          <i class="fas fa-calculator" style="font-size: 3em; color: var(--accent); opacity: 0.7;"></i>
+        </div>
+        <h3>📐 Calculator Kerucut</h3>
+        <p>Mini app console untuk perhitungan matematika</p>
+        <span class="tag">Dart</span>
+        <div class="project-meta">
+          <span class="meta-item"><i class="fas fa-calendar"></i> Sep 2024</span>
+          <span class="meta-item"><i class="fas fa-mobile"></i> Mobile</span>
+        </div>
+      </article>
+
+      <article class="card project coming-soon" tabindex="0" data-category="game" data-title="Project Mendatang" data-desc="Sedang merencanakan game puzzle 2D dengan tema petualangan santai. Akan menggunakan Java dan library game engine yang lebih advanced. Stay tuned!" data-tech="Java, LibGDX">
+        <div class="project-image">
+          <i class="fas fa-hammer" style="font-size: 3em; color: var(--muted); opacity: 0.5;"></i>
+        </div>
+        <h3>🚧 Coming Soon</h3>
+        <p>Game puzzle petualangan (dalam development)</p>
+        <span class="tag coming-soon-tag">Soon</span>
+        <div class="project-meta">
+          <span class="meta-item"><i class="fas fa-calendar"></i> Q2 2025</span>
+          <span class="meta-item"><i class="fas fa-gamepad"></i> Game</span>
+        </div>
+      </article>
+    </div>
+
+<!-- ==== Contact Section ==== -->
+    <section class="contact-section">
+      <div class="contact-header">
+        <h2>Mari Berkolaborasi</h2>
+        <p>Punya ide project menarik? Atau mau ngobrol tentang coding? Hit me up!</p>
+      </div>
+      
+      <form id="contactForm" class="card form-card" novalidate>
+        <div class="form-row">
+          <label>Nama
+            <input type="text" name="name" placeholder="Nama lengkap" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" placeholder="nama@email.com" required>
+          </label>
+        </div>
+        
+        <label>Subjek
+          <select name="subject" required>
+            <option value="">Pilih topik...</option>
+            <option value="collaboration">Kolaborasi Project</option>
+            <option value="question">Tanya-tanya Coding</option>
+            <option value="feedback">Feedback Website</option>
+            <option value="other">Lainnya</option>
+          </select>
+        </label>
+        
+        <label>Pesan
+          <textarea name="message" rows="5" placeholder="Tulis pesan kamu..." required></textarea>
+        </label>
+        
+        <div class="form-actions">
+          <button type="submit" class="btn primary">
+            <i class="fas fa-paper-plane"></i>
+            Kirim Pesan
+          </button>
+          <span id="formStatus" role="status" aria-live="polite"></span>
+        </div>
+      </form>
+    </section>
+  </main>
+
+<!-- ==== Footer Section ==== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Muhammad Fajri. Semua hak dilindungi.</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/mhmmdfjri16_?igsh=cmpjdmlmZ3B4N2Fk" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/Jii4u" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://discord.com/users/1407962499915190333" aria-label="Discord"><i class="fab fa-discord"></i></a>
+      </div>
+    </div>
+  </footer>
+
+<!-- ==== JavaScript Import ==== -->
+  <script src="assets/app.js"></script>
+</body>
+</html>

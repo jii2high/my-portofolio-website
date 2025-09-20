@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beranda • Muhammad Fajri</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="description" content="Website profil milik Muhammad Fajri.">
+</head>
+
+<!-- ==== Header & Navigation Bar Section ==== -->
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">MF</a>
+      <nav class="nav" aria-label="Navigasi utama" id="nav">
+        <a href="index.html" class="active">Beranda</a>
+        <a href="about.html">Tentang</a>
+        <a href="projects.html">Proyek</a>
+      </nav>
+      <div class="theme-actions">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button id="themeToggle" class="btn icon-btn" aria-label="Toggle tema">🌓</button>
+      </div>
+    </div>
+  </header>
+
+<!-- ==== Main Content Section ==== -->
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Halo, saya <span class="accent">Muhammad Fajri</span> 👋</h1>
+        <p>Siswa SMK & calon <b>Game Developer Dunia</b> yang suka ngulik code dan bikin game 2D santai.
+        Website ini aku buat untuk jadi profil singkat & etalase karya.</p>
+        <div class="cta">
+          <a class="btn primary" href="projects.html">Lihat Proyek</a>
+          <a class="btn" href="about.html">Tentang Saya</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="blob"></div>
+        <img src="assets/profile.png" alt="Ilustrasi profil" />
+      </div>
+    </section>
+
+<!-- ==== Skills & Highlight Section ==== -->
+    <section class="cards">
+      <article class="card">
+        <h3>🚀 Keahlian</h3>
+        <ul>
+          <li>Java • PHP • Dart (basic)</li>
+          <li>Greenfoot (Game 2D)</li>
+          <li>Microsoft Office</li>
+          <li>Teamwork & Komunikasi</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>✨ Highlight</h3>
+        <p>Proyek kecil: <b>Greedy Fish</b> (Greenfoot), mini app hitung kerucut (Dart), dan beberapa latihan OOP PHP.</p>
+      </article>
+      <article class="card">
+        <h3>📞 Kontak Cepat</h3>
+        <ul class="contact">
+          <li><span>📧</span> fajri.muhammad@smkn1kotabekasi.sch.id</li>
+          <li><span>📱</span> 0898-5553-728</li>
+          <li><span>📍</span> Bekasi, Indonesia</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+<!-- ==== Footer Section ==== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Muhammad Fajri. Semua hak dilindungi.</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/mhmmdfjri16_?igsh=cmpjdmlmZ3B4N2Fk" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/Jii4u" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://discord.com/users/1407962499915190333" aria-label="Discord"><i class="fab fa-discord"></i></a>
+      </div>
+    </div>
+  </footer>
+
+<!-- ==== JavaScript Import ==== -->
+  <script src="assets/app.js"></script>
+</body>
+</html>

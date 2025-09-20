@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tentang • Muhammad Fajri</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<!-- ==== Header & Navigation Bar Section ==== -->
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">MF</a>
+      <nav class="nav" aria-label="Navigasi utama" id="nav">
+        <a href="index.html">Beranda</a>
+        <a href="about.html" class="active">Tentang</a>
+        <a href="projects.html">Proyek</a>
+      </nav>
+      <div class="theme-actions">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button id="themeToggle" class="btn icon-btn" aria-label="Toggle tema">🌓</button>
+      </div>
+    </div>
+  </header>
+
+<!-- ==== Main Content Section ==== -->
+  <main class="container narrow">
+    <div class="page-header">
+      <h1>Tentang Saya</h1>
+      <p class="page-subtitle">Kenalan lebih dekat dengan saya dan perjalanan coding saya</p>
+    </div>
+
+    <div class="about-intro">
+      <p>Nama saya <b>Muhammad Fajri</b>. Saya anak <b>ke-3</b> dari 3 bersaudara yang lahir dari keluarga kecil yang sederhana. Saya suka belajar pemrograman dan
+      membuat game 2D yang simpel tapi seru. Fokus utama saat ini: memperdalam OOP,
+      logic game, dan dasar-dasar web (HTML, CSS, JS).</p>
+    </div>
+
+    <h2>Biodata Singkat</h2>
+    <div class="grid two">
+      <ul class="bio">
+        <li><span>Nama</span><b>Muhammad Fajri</b></li>
+        <li><span>TTL</span><b>Jakarta, 16 September 2008</b></li>
+        <li><span>Alamat</span><b>Bekasi, Indonesia</b></li>
+      </ul>
+      <ul class="bio">
+        <li><span>Email</span><b>fajri.muhammad@smkn1kotabekasi.sch.id</b></li>
+        <li><span>Telepon</span><b>0898-5553-728</b></li>
+        <li><span>Hobi</span><b>Koding, Game, Baca</b></li>
+      </ul>
+    </div>
+
+    <h2>Riwayat Pendidikan</h2>
+    <ul class="timeline">
+      <li><b>SMK Negeri 1 Kota Bekasi</b> — RPL (2024 — sekarang)</li>
+      <li><b>MTs Assalafiyah</b> (2021 — 2024)</li>
+      <li><b>SD Negeri Kalibaru 3</b> (2015 — 2021)</li>
+    </ul>
+
+    <h2>Minat & Target</h2>
+    <div class="goals-section">
+      <p>Mengembangkan game orisinal bertema <b>Petualangan Santai</b>, mendalami hal-hal yang sudah saya pelajari seperti <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, <b>PHP</b>, <b>Java</b>, <b>C</b>, <b>C#</b>, dan <b>Python</b> serta mencoba mengulik hal-hal baru.</p>
+      
+      <div class="skills-progress">
+        <h3>Progress Belajar</h3>
+        <div class="skill-item">
+          <div class="skill-info">
+            <span>Java</span>
+            <span>75%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 75%"></div>
+          </div>
+        </div>
+        
+        <div class="skill-item">
+          <div class="skill-info">
+            <span>PHP</span>
+            <span>60%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 60%"></div>
+          </div>
+        </div>
+        
+        <div class="skill-item">
+          <div class="skill-info">
+            <span>HTML/CSS</span>
+            <span>80%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 80%"></div>
+          </div>
+        </div>
+        
+        <div class="skill-item">
+          <div class="skill-info">
+            <span>JavaScript</span>
+            <span>55%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 55%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="back-to-home">
+      <a href="index.html" class="btn primary">
+        <i class="fas fa-arrow-left"></i>
+        Kembali ke Beranda
+      </a>
+    </div>
+  </main>
+
+<!-- ==== Footer Section ==== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Muhammad Fajri. Semua hak dilindungi.</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/mhmmdfjri16_?igsh=cmpjdmlmZ3B4N2Fk" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/Jii4u" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://discord.com/users/1407962499915190333" aria-label="Discord"><i class="fab fa-discord"></i></a>
+      </div>
+    </div>
+  </footer>
+
+<!-- ==== JavaScript Import ==== -->
+  <script src="assets/app.js"></script>
+</body>
+</html>
